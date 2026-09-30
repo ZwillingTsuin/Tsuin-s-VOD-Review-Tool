@@ -1,0 +1,10 @@
+# the app keeps its data outside this folder; these only appear when testing with --data=./something
+tmp-data/
+*.db
+*.db-shm
+*.db-wal
+node_modules/
+.DS_Store
+Thumbs.db
+# local editor / assistant settings
+.claude/

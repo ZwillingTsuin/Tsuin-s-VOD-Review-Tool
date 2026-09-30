@@ -1,0 +1,18 @@
+{
+  "name": "vod-review-tool",
+  "productName": "VOD Review Tool",
+  "version": "0.6.0",
+  "description": "Review your VALORANT matches and pro VODs: match history, round maps, VOD review with notes, insights. Runs locally on your PC.",
+  "private": true,
+  "type": "module",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/server.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch src/server.js --no-open",
+    "test": "node --disable-warning=ExperimentalWarning --test \"test/*.test.js\""
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VOD Review Tool</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/app.css">
+  <script type="module" src="/js/app.js"></script>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#/matches" aria-label="VOD Review Tool, home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text"><small>VALORANT</small><b>VOD Review</b></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#/matches" data-nav="matches">Matches</a>
+      <a href="#/pros" data-nav="pros">Pro review</a>
+      <a href="#/reviews" data-nav="reviews">Reviews</a>
+      <a href="#/insights" data-nav="insights">Insights</a>
+    </nav>
+    <span class="grow"></span>
+    <span class="sync-line small muted" id="sync" aria-live="polite"></span>
+    <a href="#/settings" class="nav-gear" data-nav="settings" aria-label="Settings" data-tip="Settings"></a>
+    <button class="nav-quit quiet icon-btn" aria-label="Stop the app" data-tip="Stop the app (it also stops by itself about 45 minutes after its last tab is closed)"></button>
+  </header>
+  <main id="view" tabindex="-1"></main>
+</body>
+</html>
